@@ -1,0 +1,13 @@
+extends layout
+
+block layout-content
+  div.text-center
+    form(class="login-form", method="POST" action="/login")
+     h1 User Login
+     label( for="inputUserName") Username
+     input(type="email" name="username" id="inputUsername" placeholder="username" required autofocus)
+
+     label(for="inputPassword") Password
+     input(type="password" name="password" id="inputPassowrd" placeholder="password" required)
+
+     button(type="submit") Login
